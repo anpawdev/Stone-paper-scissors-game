@@ -13,18 +13,33 @@
     <button id="new-game">New Game</button>
   </div>
   <div>
-    <button id="paper-button">Paper</button>
+    <button class="player-move" id="paper-button" data-move="paper">Paper</button>
   </div>
   <div>
-    <button id="stone-button">Stone</button>
+    <button class="player-move" id="stone-button" data-move="stone">Stone</button>
   </div>
   <div>
-    <button id="scissors-button">Scissors</button>
+    <button class="player-move" id="scissors-button" data-move="scissors">Scissors</button>
   </div>
   <div id="output"></div>
   <h2>Player vs Computer</h2>
   <div id="result">X-Y</div>
-  <div id="end"></div>
+  <div class="show-modal" data-modal="#lost">
+    <div class="overlay" id="lost">
+      <div class="modal">
+        <button class="close .js--close-modal">x</button>
+        <div>YOU LOST THE ENTIRE GAME!! TRY AGAIN! <br> CLICK NEW GAME!</div>
+      </div>
+    </div>
+  </div>
+  <div class="show-modal" data-modal="#win">
+    <div class="overlay" id="win">
+      <div class="modal">
+        <button class="close .js--close-modal">x</button>
+        <div>YOU WON THE ENTIRE GAME!! <br> CLICK NEW GAME!</div>
+      </div>
+    </div>
+  </div>
   <!-- partial -->
   <script src="js/script.js"></script>
 
