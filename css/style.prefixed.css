@@ -57,7 +57,7 @@ button:hover {
 .modal {
   display: none;
   background: #fff;
-  width: 200px;
+  width: 500px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -80,5 +80,9 @@ button:hover {
 .modal .content {
   min-height: 30px;
   padding: 5px 30px;
+}
+
+.modal p {
+  font-size: 20px;
 }
 /*# sourceMappingURL=style.prefixed.css.map */

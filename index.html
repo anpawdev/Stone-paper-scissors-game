@@ -24,20 +24,22 @@
   <div id="output"></div>
   <h2>Player vs Computer</h2>
   <div id="result">X-Y</div>
-  <div class="show-modal" data-modal="#lost">
-    <div class="overlay" id="lost">
-      <div class="modal">
-        <button class="close .js--close-modal">x</button>
-        <div>YOU LOST THE ENTIRE GAME!! TRY AGAIN! <br> CLICK NEW GAME!</div>
+  <div class="overlay" id="modal-overlay">
+    <div class="modal" id="lost">
+      <button class="close .js--close-modal">x</button>
+      <div class="content">
+        <p>YOU LOST THE ENTIRE GAME! TRY AGAIN! </p>
+        <img src="../images/stone_paper_scissors.jpeg" alt="stone_paper_scisors">
+        <p>Click new game</p>
       </div>
     </div>
-  </div>
-  <div class="show-modal" data-modal="#win">
-    <div class="overlay" id="win">
-      <div class="modal">
+    <div class="modal" id="win">
         <button class="close .js--close-modal">x</button>
-        <div>YOU WON THE ENTIRE GAME!! <br> CLICK NEW GAME!</div>
-      </div>
+        <div class="content">
+          <p>YOU WON THE ENTIRE GAME!</p>
+          <img src="../images/stone_paper_scissors.jpeg" alt="stone_paper_scisors">
+          <p>Click new game</p>
+        </div>
     </div>
   </div>
   <!-- partial -->

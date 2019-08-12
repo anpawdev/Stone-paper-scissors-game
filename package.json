@@ -7,12 +7,15 @@
     "test": "test"
   },
   "scripts": {
+    "test": "npm run test:html",
+    "test:html": "globstar nu-html-checker *.html",
     "init-project": "npm install && npm-run-all init:*",
     "init:dirs": "mkdirp sass css vendor images js",
     "init:files": "touch README.md index.html sass/style.scss js/script.js",
     "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
-    "build": "npm-run-all build:*",
+    "build": "npm run build:sass && npm run build:autoprefixer && npm run test",
     "build:sass": "node-sass --output-style compact -o css sass",
+    "build:autoprefixer": "autoprefixer-cli css/style.css",
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
     "watch": "npm-run-all build -p watch:*",
     "watch:sass": "node-sass --output-style expanded --source-map true -o css sass --watch",

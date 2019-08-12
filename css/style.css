@@ -14,7 +14,6 @@ button {
   border: 1px solid #2c3e50;
   border-radius: 5px;
   cursor: pointer;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -58,12 +57,11 @@ button:hover {
 .modal {
   display: none;
   background: #fff;
-  width: 200px;
+  width: 500px;
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-          transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
 }
 
 .modal.show {
@@ -83,4 +81,9 @@ button:hover {
   min-height: 30px;
   padding: 5px 30px;
 }
+
+.modal p {
+  font-size: 20px;
+}
+
 /*# sourceMappingURL=style.css.map */
