@@ -26,21 +26,65 @@
   <div id="result">X-Y</div>
   <div class="overlay" id="modal-overlay">
     <div class="modal" id="lost">
-      <button class="close .js--close-modal">x</button>
+      <button class="btn close .js--close-modal">x</button>
       <div class="content">
         <p>YOU LOST THE ENTIRE GAME! TRY AGAIN! </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Round number</th>
+              <th>Player result</th>
+              <th>Computer result</th>
+              <th>Round result</th>
+              <th>Player vs Computer</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
         <img src="../images/stone_paper_scissors.jpeg" alt="stone_paper_scisors">
         <p>Click new game</p>
       </div>
     </div>
     <div class="modal" id="win">
-        <button class="close .js--close-modal">x</button>
+        <button class="btn close .js--close-modal">x</button>
         <div class="content">
           <p>YOU WON THE ENTIRE GAME!</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Round number</th>
+                <th>Player result</th>
+                <th>Computer result</th>
+                <th>Round result</th>
+                <th>Player vs Computer</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
           <img src="../images/stone_paper_scissors.jpeg" alt="stone_paper_scisors">
           <p>Click new game</p>
         </div>
     </div>
+    <div class="modal" id="draw">
+      <button class="btn close .js--close-modal">x</button>
+      <div class="content">
+        <p>DRAW!</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Round number</th>
+              <th>Player result</th>
+              <th>Computer result</th>
+              <th>Round result</th>
+              <th>Player vs Computer</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <img src="../images/stone_paper_scissors.jpeg" alt="stone_paper_scisors">
+        <p>Click new game</p>
+      </div>
+  </div>
   </div>
   <!-- partial -->
   <script src="js/script.js"></script>

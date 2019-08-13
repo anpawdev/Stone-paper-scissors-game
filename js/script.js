@@ -10,6 +10,7 @@ var params = {
   playerResult: 0,
   gamesNum: 0,
   gamesMax: 0,
+  result: 0,
   progress: []
 };
 
@@ -20,10 +21,10 @@ var move = ['paper', 'stone', 'scissors'];
 var game = function() {
   if (params.computerResult == params.gamesMax) {
     // console.log("Przegrales");
-    showModal('lost');
+    showModal('#lost');
   } else if (params.playerResult == params.gamesMax) {
     // console.log("Wygrałes");
-    showModal('win');
+    showModal('#win');
   }
 };
 
@@ -74,9 +75,10 @@ for (var i = 0; i < player.length; i++) {
   player[i].addEventListener("click", function(event) {
     playerMove = event.target.getAttribute("data-move");
     playGame(playerMove);
+
+    params.progress.push(gamesMax, computerResult, playerResult, result);
   });
 }
-
 
 
 // Modal
