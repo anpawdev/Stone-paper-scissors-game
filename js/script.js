@@ -76,7 +76,12 @@ for (var i = 0; i < player.length; i++) {
     playerMove = event.target.getAttribute("data-move");
     playGame(playerMove);
 
-    params.progress.push(gamesMax, computerResult, playerResult, result);
+    params.progress.push({
+      gamesMax: gamesMax, 
+      playerResult: playerResult,
+      computerResult: computerResult,
+      result: result,
+    });
   });
 }
 
