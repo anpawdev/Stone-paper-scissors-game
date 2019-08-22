@@ -80,7 +80,7 @@ for (var i = 0; i < player.length; i++) {
       gamesMax: gamesMax, 
       playerResult: playerResult,
       computerResult: computerResult,
-      result: result,
+      result: result
     });
   });
 }
@@ -88,9 +88,24 @@ for (var i = 0; i < player.length; i++) {
 
 // Modal
 
-var showModal = function(event){
+
+var showModal = function(modal){
   document.querySelector('#modal-overlay').classList.add('show');
-  document.querySelector('.modal').classList.add('show');
+  document.querySelector(modal).classList.add('show');
+
+  var html = "";
+  html += '<table>';
+    html += '<tbody>';
+    for (var i = 0; i <= params.progress.length; i++) {
+      html += '<tr>';
+        html += '<td>' + params.progress[i].gamesMax + '</td>';
+        html += '<td>' + params.progress[i].playerResult + '</td>';
+        html += '<td>' + params.progress[i].computerResult + '</td>';
+        html += '<td>' + params.progress[i].result + '</td>';
+        html += '</tr>';
+    }
+  html += '</tbody>';
+  html += '</table>';
 };
 
 var hideModal = function(event){
@@ -98,7 +113,7 @@ var hideModal = function(event){
   document.querySelector('#modal-overlay').classList.remove('show');
 };
 
-var closeButtons = document.querySelectorAll('.modal .js--close-modal');
+var closeButtons = document.querySelectorAll('.close');
 
 for(var i = 0; i < closeButtons.length; i++){
   closeButtons[i].addEventListener('click', hideModal);
