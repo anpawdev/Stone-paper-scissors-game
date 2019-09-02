@@ -57,7 +57,7 @@ button:hover {
 .modal {
   display: none;
   background: #fff;
-  width: 550px;
+  width: 700px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -79,9 +79,15 @@ button:hover {
   background-color: #fff;
 }
 
-.modal .content {
+.modal table {
+  margin: 0 auto;
   min-height: 30px;
-  padding: 5px 30px;
+  padding: 10px;
+  text-align: justify;
+}
+
+.modal table td {
+  padding-left: 20px;
 }
 
 .modal p {
