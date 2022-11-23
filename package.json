@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/AnnaPawlik/nauka-gita#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.27.10",
     "globstar": "^1.0.0",
     "node-sass": "^4.12.0",
     "npm-run-all": "^4.1.5",
